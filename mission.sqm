@@ -1,0 +1,156 @@
+version=12;
+class Mission
+{
+	addOns[]=
+	{
+		"maa_uniform",
+		"thirskw"
+	};
+	addOnsAuto[]=
+	{
+		"maa_uniform",
+		"thirskw"
+	};
+	randomSeed=3747085;
+	class Intel
+	{
+		briefingName="Operation Chimaera ";
+		overviewText="5SFG Operation - Details to be disclosed at time of briefing. ";
+		resistanceWest=0;
+		startWeather=0.56999999;
+		startFog=0.34999999;
+		startWind=0.099999994;
+		startWaves=0.099999994;
+		forecastWeather=0.93000001;
+		forecastFog=0.5;
+		forecastWind=0.099999994;
+		forecastWaves=0.099999994;
+		forecastLightnings=0.099999994;
+		year=2015;
+		month=6;
+		day=6;
+		hour=2;
+		minute=45;
+		startFogDecay=0.013;
+		forecastFogDecay=0.013;
+	};
+	class Groups
+	{
+		items=1;
+		class Item0
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={1583.3518,46.396156,3064.7595};
+					azimut=-199.27406;
+					id=0;
+					side="WEST";
+					vehicle="B_OD_OD_soldier_F";
+					player="PLAYER COMMANDER";
+					leader=1;
+					skill=0.60000002;
+				};
+			};
+		};
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"thirskw"
+	};
+	addOnsAuto[]=
+	{
+		"thirskw"
+	};
+	randomSeed=2472709;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.1;
+		startFog=0.2;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.2;
+		forecastFog=0.2;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=1991;
+		month=3;
+		day=16;
+		hour=11;
+		minute=0;
+		startFogDecay=0.013;
+		forecastFogDecay=0.013;
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"thirskw"
+	};
+	addOnsAuto[]=
+	{
+		"thirskw"
+	};
+	randomSeed=4764384;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.1;
+		startFog=0.2;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.2;
+		forecastFog=0.2;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=1991;
+		month=3;
+		day=16;
+		hour=11;
+		minute=0;
+		startFogDecay=0.013;
+		forecastFogDecay=0.013;
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"thirskw"
+	};
+	addOnsAuto[]=
+	{
+		"thirskw"
+	};
+	randomSeed=15475795;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.1;
+		startFog=0.2;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.2;
+		forecastFog=0.2;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=1991;
+		month=3;
+		day=16;
+		hour=11;
+		minute=0;
+		startFogDecay=0.013;
+		forecastFogDecay=0.013;
+	};
+};
