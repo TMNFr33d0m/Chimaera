@@ -4,11 +4,16 @@ class Mission
 	addOns[]=
 	{
 		"maa_uniform",
-		"thirskw"
+		"thirskw",
+		"RHS_US_A2_AirImport",
+		"ace_medical",
+		"rhsusf_c_troops"
 	};
 	addOnsAuto[]=
 	{
-		"maa_uniform",
+		"ace_medical",
+		"rhsusf_c_troops",
+		"RHS_US_A2_AirImport",
 		"thirskw"
 	};
 	randomSeed=3747085;
@@ -36,25 +41,1110 @@ class Mission
 	};
 	class Groups
 	{
-		items=1;
+		items=19;
 		class Item0
 		{
-			side="WEST";
+			side="LOGIC";
 			class Vehicles
 			{
 				items=1;
 				class Item0
 				{
-					position[]={1583.3518,46.396156,3064.7595};
-					azimut=-199.27406;
+					position[]={1537.955,46.396156,3121.9578};
+					azimut=27.854273;
+					class args
+					{
+						items=2;
+						class Item0
+						{
+							value="Doc, Doc1, Doc2";
+							parentCls="ACE_moduleAssignMedicRoles";
+							typeName="EnableList";
+						};
+						class Item1
+						{
+							value="2";
+							parentCls="ACE_moduleAssignMedicRoles";
+							typeName="role";
+						};
+					};
 					id=0;
-					side="WEST";
-					vehicle="B_OD_OD_soldier_F";
-					player="PLAYER COMMANDER";
+					side="LOGIC";
+					vehicle="ACE_moduleAssignMedicRoles";
 					leader=1;
+					lock="UNLOCKED";
 					skill=0.60000002;
 				};
 			};
+		};
+		class Item1
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={1536.8695,46.396156,3122.4956};
+					azimut=27.854273;
+					class args
+					{
+						items=2;
+						class Item0
+						{
+							value="medR1, medG1, medR2, medG2, medR13, medG3, Amed1, Amed2";
+							parentCls="ACE_moduleAssignMedicRoles";
+							typeName="EnableList";
+						};
+						class Item1
+						{
+							value="1";
+							parentCls="ACE_moduleAssignMedicRoles";
+							typeName="role";
+						};
+					};
+					id=1;
+					side="LOGIC";
+					vehicle="ACE_moduleAssignMedicRoles";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item2
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=6;
+				class Item0
+				{
+					position[]={1549.5831,46.396156,3132.5264};
+					azimut=199.49699;
+					id=2;
+					side="WEST";
+					vehicle="rhsusf_army_ucp_officer";
+					player="PLAY CDG";
+					leader=1;
+					rank="MAJOR";
+					skill=0.44999999;
+					init="this setGroupid [""Alpha Company ODB 5210 | Anvil"",""GroupColor6""]";
+					description="Company Commander";
+				};
+				class Item1
+				{
+					position[]={1545.7449,46.396156,3134.1497};
+					azimut=199.49699;
+					id=3;
+					side="WEST";
+					vehicle="rhsusf_army_ucp_squadleader";
+					player="PLAY CDG";
+					rank="SERGEANT";
+					skill=0.40000001;
+					description="Company Sergeant Major";
+				};
+				class Item2
+				{
+					position[]={1548.1465,46.396156,3133.0459};
+					azimut=199.49699;
+					id=4;
+					side="WEST";
+					vehicle="rhsusf_army_ucp_grenadier";
+					player="PLAY CDG";
+					rank="CAPTAIN";
+					skill=0.40000001;
+					description="Executive Officer";
+				};
+				class Item3
+				{
+					position[]={1546.8096,46.396156,3133.6248};
+					azimut=199.49699;
+					id=5;
+					side="WEST";
+					vehicle="rhsusf_army_ucp_engineer";
+					player="PLAY CDG";
+					rank="LIEUTENANT";
+					skill=0.44999999;
+					description="Company Technician";
+				};
+				class Item4
+				{
+					position[]={1544.2385,46.396156,3134.7021};
+					azimut=199.498;
+					id=6;
+					side="WEST";
+					vehicle="rhsusf_army_ucp_medic";
+					player="PLAY CDG";
+					skill=0.40000001;
+					text="Doc";
+					description="Medical Sergeant";
+				};
+				class Item5
+				{
+					position[]={1542.3643,46.396156,3135.3774};
+					azimut=199.49699;
+					id=7;
+					side="WEST";
+					vehicle="rhsusf_army_ucp_fso";
+					player="PLAY CDG";
+					skill=0.40000001;
+					description="Communications Sergeant";
+				};
+			};
+		};
+		class Item3
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={1555.2334,46.396156,3122.7415};
+					azimut=200.683;
+					id=8;
+					side="WEST";
+					vehicle="rhsusf_army_ucp_officer";
+					player="PLAY CDG";
+					leader=1;
+					rank="CAPTAIN";
+					skill=0.5;
+					init="this setGroupid [""ODA 5211 | Nomad"",""GroupColor0""]";
+					description="Det. Commander";
+				};
+				class Item1
+				{
+					position[]={1553.0616,46.396156,3123.6179};
+					azimut=200.683;
+					id=9;
+					side="WEST";
+					vehicle="rhsusf_army_ucp_teamleader";
+					player="PLAY CDG";
+					rank="SERGEANT";
+					skill=0.5;
+					description="Asst. Det. Commander";
+				};
+				class Item2
+				{
+					position[]={1551.3639,46.396156,3124.4412};
+					azimut=200.683;
+					id=10;
+					side="WEST";
+					vehicle="rhsusf_army_ucp_grenadier";
+					player="PLAY CDG";
+					rank="SERGEANT";
+					skill=0.40000001;
+					description="Operations Sergeant";
+				};
+				class Item3
+				{
+					position[]={1549.5161,46.396156,3125.3665};
+					azimut=200.683;
+					id=11;
+					side="WEST";
+					vehicle="rhsusf_army_ucp_medic";
+					player="PLAY CDG";
+					rank="SERGEANT";
+					skill=0.40000001;
+					text="Doc3";
+					description="Asst. Ops Sergeant";
+				};
+			};
+		};
+		class Item4
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={1553.7948,46.396156,3120.0273};
+					azimut=206.448;
+					id=12;
+					side="WEST";
+					vehicle="rhsusf_army_ucp_teamleader";
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.5;
+					init="this setGroupid [""Red Team"",""GroupColor2""]";
+					description="Weapons Sergeant";
+				};
+				class Item1
+				{
+					position[]={1552.0627,46.396156,3120.8296};
+					azimut=206.448;
+					id=13;
+					side="WEST";
+					vehicle="rhsusf_army_ucp_engineer";
+					player="PLAY CDG";
+					rank="SERGEANT";
+					skill=0.40000001;
+					description="Engineer Sergeant";
+				};
+				class Item2
+				{
+					position[]={1550.2618,46.396156,3122.0195};
+					azimut=206.448;
+					id=14;
+					side="WEST";
+					vehicle="rhsusf_army_ucp_medic";
+					player="PLAY CDG";
+					rank="SERGEANT";
+					skill=0.40000001;
+					text="medR3";
+					description="Medical Sergeant";
+				};
+				class Item3
+				{
+					position[]={1548.5043,46.396156,3122.8757};
+					azimut=206.448;
+					id=15;
+					side="WEST";
+					vehicle="rhsusf_army_ucp_fso";
+					player="PLAY CDG";
+					rank="SERGEANT";
+					skill=0.40000001;
+					description="Comms Sergeant";
+				};
+			};
+		};
+		class Item5
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={1552.8145,46.396156,3117.2859};
+					azimut=206.448;
+					id=16;
+					side="WEST";
+					vehicle="rhsusf_army_ucp_teamleader";
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.5;
+					init="this setGroupid [""Gold Team"",""GroupColor5""]";
+					description="Weapons Sergeant";
+				};
+				class Item1
+				{
+					position[]={1551.059,46.396156,3118.0994};
+					azimut=206.448;
+					id=17;
+					side="WEST";
+					vehicle="rhsusf_army_ucp_engineer";
+					player="PLAY CDG";
+					rank="SERGEANT";
+					skill=0.40000001;
+					description="Engineer Sergeant";
+				};
+				class Item2
+				{
+					position[]={1549.2466,46.396156,3119.2771};
+					azimut=206.448;
+					id=18;
+					side="WEST";
+					vehicle="rhsusf_army_ucp_medic";
+					player="PLAY CDG";
+					rank="SERGEANT";
+					skill=0.40000001;
+					text="medG3";
+					description="Medical Sergeant";
+				};
+				class Item3
+				{
+					position[]={1547.5166,46.396156,3120.1089};
+					azimut=206.448;
+					id=19;
+					side="WEST";
+					vehicle="rhsusf_army_ucp_fso";
+					player="PLAY CDG";
+					rank="SERGEANT";
+					skill=0.40000001;
+					description="Comms Sergeant";
+				};
+			};
+		};
+		class Item6
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={1547.345,46.396156,3126.4756};
+					azimut=200.683;
+					id=20;
+					side="WEST";
+					vehicle="rhsusf_army_ucp_officer";
+					player="PLAY CDG";
+					leader=1;
+					rank="CAPTAIN";
+					skill=0.5;
+					init="this setGroupid [""ODA 5212 | Harbinger"",""GroupColor0""]";
+					description="Det. Commander";
+				};
+				class Item1
+				{
+					position[]={1545.4008,46.396156,3127.4292};
+					azimut=200.683;
+					id=21;
+					side="WEST";
+					vehicle="rhsusf_army_ucp_teamleader";
+					player="PLAY CDG";
+					rank="SERGEANT";
+					skill=0.5;
+					description="Asst. Det. Commander";
+				};
+				class Item2
+				{
+					position[]={1543.4536,46.396156,3128.1807};
+					azimut=200.683;
+					id=22;
+					side="WEST";
+					vehicle="rhsusf_army_ucp_grenadier";
+					player="PLAY CDG";
+					rank="SERGEANT";
+					skill=0.40000001;
+					description="Operations Sergeant";
+				};
+				class Item3
+				{
+					position[]={1541.604,46.396156,3129.1057};
+					azimut=200.683;
+					id=23;
+					side="WEST";
+					vehicle="rhsusf_army_ucp_medic";
+					player="PLAY CDG";
+					rank="SERGEANT";
+					skill=0.40000001;
+					text="Doc2";
+					description="Asst. Ops Sergeant";
+				};
+			};
+		};
+		class Item7
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={1546.5858,46.396156,3124.1113};
+					azimut=206.448;
+					id=24;
+					side="WEST";
+					vehicle="rhsusf_army_ucp_teamleader";
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.5;
+					init="this setGroupid [""Red Team"",""GroupColor2""]";
+					description="Weapons Sergeant";
+				};
+				class Item1
+				{
+					position[]={1544.4175,46.396156,3125.2966};
+					azimut=206.448;
+					id=25;
+					side="WEST";
+					vehicle="rhsusf_army_ucp_engineer";
+					player="PLAY CDG";
+					rank="SERGEANT";
+					skill=0.40000001;
+					description="Engineer Sergeant";
+				};
+				class Item2
+				{
+					position[]={1542.5955,46.396156,3126.489};
+					azimut=206.448;
+					id=26;
+					side="WEST";
+					vehicle="rhsusf_army_ucp_medic";
+					player="PLAY CDG";
+					rank="SERGEANT";
+					skill=0.40000001;
+					text="medR2";
+					description="Medical Sergeant";
+					syncId=0;
+					synchronizations[]={0};
+				};
+				class Item3
+				{
+					position[]={1540.7794,46.396156,3127.376};
+					azimut=206.448;
+					id=27;
+					side="WEST";
+					vehicle="rhsusf_army_ucp_fso";
+					player="PLAY CDG";
+					rank="SERGEANT";
+					skill=0.40000001;
+					description="Comms Sergeant";
+				};
+			};
+		};
+		class Item8
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={1545.6086,46.396156,3121.3799};
+					azimut=206.448;
+					id=28;
+					side="WEST";
+					vehicle="rhsusf_army_ucp_teamleader";
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.5;
+					init="this setGroupid [""Gold Team"",""GroupColor5""]";
+					description="Weapons Sergeant";
+				};
+				class Item1
+				{
+					position[]={1543.863,46.396156,3122.2122};
+					azimut=206.448;
+					id=29;
+					side="WEST";
+					vehicle="rhsusf_army_ucp_engineer";
+					player="PLAY CDG";
+					rank="SERGEANT";
+					skill=0.40000001;
+					description="Engineer Sergeant";
+				};
+				class Item2
+				{
+					position[]={1541.6152,46.396156,3123.7046};
+					azimut=206.448;
+					id=30;
+					side="WEST";
+					vehicle="rhsusf_army_ucp_medic";
+					player="PLAY CDG";
+					rank="SERGEANT";
+					skill=0.40000001;
+					text="medG2";
+					description="Medical Sergeant";
+				};
+				class Item3
+				{
+					position[]={1539.8666,46.396156,3124.5698};
+					azimut=206.448;
+					id=31;
+					side="WEST";
+					vehicle="rhsusf_army_ucp_fso";
+					player="PLAY CDG";
+					rank="SERGEANT";
+					skill=0.40000001;
+					description="Comms Sergeant";
+				};
+			};
+		};
+		class Item9
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={1538.9642,46.396156,3130.3503};
+					azimut=200.683;
+					id=32;
+					side="WEST";
+					vehicle="rhsusf_army_ucp_officer";
+					player="PLAY CDG";
+					leader=1;
+					rank="CAPTAIN";
+					skill=0.5;
+					init="this setGroupid [""ODA 5213 | Chaos"",""GroupColor0""]";
+					description="Det. Commander";
+				};
+				class Item1
+				{
+					position[]={1536.9556,46.396156,3131.5308};
+					azimut=200.683;
+					id=33;
+					side="WEST";
+					vehicle="rhsusf_army_ucp_teamleader";
+					player="PLAY CDG";
+					rank="SERGEANT";
+					skill=0.5;
+					description="Asst. Det. Commander";
+				};
+				class Item2
+				{
+					position[]={1535.236,46.396156,3132.2759};
+					azimut=200.683;
+					id=34;
+					side="WEST";
+					vehicle="rhsusf_army_ucp_grenadier";
+					player="PLAY CDG";
+					rank="SERGEANT";
+					skill=0.40000001;
+					description="Operations Sergeant";
+				};
+				class Item3
+				{
+					position[]={1533.387,46.396156,3133.1907};
+					azimut=200.683;
+					id=35;
+					side="WEST";
+					vehicle="rhsusf_army_ucp_medic";
+					player="PLAY CDG";
+					rank="SERGEANT";
+					skill=0.40000001;
+					text="Doc1";
+					description="Asst. Ops Sergeant";
+				};
+			};
+		};
+		class Item10
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={1537.6592,46.396156,3128.1555};
+					azimut=206.448;
+					id=36;
+					side="WEST";
+					vehicle="rhsusf_army_ucp_teamleader";
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.5;
+					init="this setGroupid [""Red Team"",""GroupColor2""]";
+					description="Weapons Sergeant";
+				};
+				class Item1
+				{
+					position[]={1535.9331,46.396156,3128.9937};
+					azimut=206.448;
+					id=37;
+					side="WEST";
+					vehicle="rhsusf_army_ucp_engineer";
+					player="PLAY CDG";
+					rank="SERGEANT";
+					skill=0.40000001;
+					description="Engineer Sergeant";
+				};
+				class Item2
+				{
+					position[]={1534.1157,46.396156,3130.1699};
+					azimut=206.44901;
+					id=38;
+					side="WEST";
+					vehicle="rhsusf_army_ucp_medic";
+					player="PLAY CDG";
+					rank="SERGEANT";
+					skill=0.40000001;
+					text="medR1";
+					description="Medical Sergeant";
+				};
+				class Item3
+				{
+					position[]={1532.3715,46.396156,3131.0046};
+					azimut=206.448;
+					id=39;
+					side="WEST";
+					vehicle="rhsusf_army_ucp_fso";
+					player="PLAY CDG";
+					rank="SERGEANT";
+					skill=0.40000001;
+					description="Comms Sergeant";
+				};
+			};
+		};
+		class Item11
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={1536.6921,46.396156,3125.4131};
+					azimut=206.448;
+					id=40;
+					side="WEST";
+					vehicle="rhsusf_army_ucp_teamleader";
+					player="PLAYER COMMANDER";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.5;
+					init="this setGroupid [""Gold Team"",""GroupColor5""]";
+					description="Weapons Sergeant";
+				};
+				class Item1
+				{
+					position[]={1534.9268,46.396156,3126.2417};
+					azimut=206.448;
+					id=41;
+					side="WEST";
+					vehicle="rhsusf_army_ucp_engineer";
+					player="PLAY CDG";
+					rank="SERGEANT";
+					skill=0.40000001;
+					description="Engineer Sergeant";
+				};
+				class Item2
+				{
+					position[]={1533.1261,46.396156,3127.4182};
+					azimut=206.44901;
+					id=42;
+					side="WEST";
+					vehicle="rhsusf_army_ucp_medic";
+					player="PLAY CDG";
+					rank="SERGEANT";
+					skill=0.40000001;
+					text="medG1";
+					description="Medical Sergeant";
+				};
+				class Item3
+				{
+					position[]={1531.3734,46.396156,3128.2493};
+					azimut=206.448;
+					id=43;
+					side="WEST";
+					vehicle="rhsusf_army_ucp_fso";
+					player="PLAY CDG";
+					rank="SERGEANT";
+					skill=0.40000001;
+					description="Comms Sergeant";
+				};
+			};
+		};
+		class Item12
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={1537.3408,46.396156,3001.9529};
+					azimut=130.35393;
+					id=44;
+					side="WEST";
+					vehicle="rhsusf_airforce_pilot";
+					player="PLAY CDG";
+					leader=1;
+					rank="CAPTAIN";
+					skill=0.40000001;
+					init="this setGroupid [""160th SOAR Detachment - Nighstalkers"",""GroupColor4""]";
+					description="Detachment Commander";
+				};
+				class Item1
+				{
+					position[]={1535.0658,46.396156,3000.2639};
+					azimut=130.35393;
+					id=45;
+					side="WEST";
+					vehicle="rhsusf_airforce_pilot";
+					player="PLAY CDG";
+					rank="LIEUTENANT";
+					skill=0.40000001;
+					description="Detachment Warrant Officer";
+				};
+			};
+		};
+		class Item13
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=5;
+				class Item0
+				{
+					position[]={1530.735,46.396156,2994.5571};
+					azimut=-11.527375;
+					id=46;
+					side="WEST";
+					vehicle="rhsusf_airforce_pilot";
+					player="PLAY CDG";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=0.40000001;
+					init="this setGroupid [""Alpha Section (MH-47E)"",""GroupColor4""]";
+					description="Section Leader";
+				};
+				class Item1
+				{
+					position[]={1532.2979,46.396156,2993.8354};
+					azimut=-11.527375;
+					id=47;
+					side="WEST";
+					vehicle="rhsusf_airforce_pilot";
+					player="PLAY CDG";
+					rank="LIEUTENANT";
+					skill=0.40000001;
+					description="Aviator";
+				};
+				class Item2
+				{
+					position[]={1534.4725,46.396156,2992.7788};
+					azimut=-11.527375;
+					id=48;
+					side="WEST";
+					vehicle="rhsusf_airforce_pilot";
+					player="PLAY CDG";
+					rank="LIEUTENANT";
+					skill=0.40000001;
+					description="Aviator";
+				};
+				class Item3
+				{
+					position[]={1536.1431,46.396156,2992.1951};
+					azimut=-11.527375;
+					id=49;
+					side="WEST";
+					vehicle="rhsusf_airforce_pilot";
+					player="PLAY CDG";
+					rank="LIEUTENANT";
+					skill=0.40000001;
+					description="Aviator";
+				};
+				class Item4
+				{
+					position[]={1537.9652,46.396156,2991.4604};
+					azimut=-11.527375;
+					id=50;
+					side="WEST";
+					vehicle="rhsusf_airforce_pilot";
+					player="PLAY CDG";
+					rank="SERGEANT";
+					skill=0.40000001;
+					text="Nmed2";
+					description="Section Medical Sergeant";
+				};
+			};
+		};
+		class Item14
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=5;
+				class Item0
+				{
+					position[]={1531.8107,46.396156,2996.8889};
+					azimut=-11.527375;
+					special="NONE";
+					id=51;
+					side="WEST";
+					vehicle="rhsusf_airforce_pilot";
+					player="PLAY CDG";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=0.40000001;
+					init="this setGroupid [""Bravo Section (MH-60M)"",""GroupColor4""]";
+					description="Section Leader";
+				};
+				class Item1
+				{
+					position[]={1533.3812,46.396156,2996.1445};
+					azimut=-11.527375;
+					id=52;
+					side="WEST";
+					vehicle="rhsusf_airforce_pilot";
+					player="PLAY CDG";
+					rank="LIEUTENANT";
+					skill=0.40000001;
+					description="Aviator";
+				};
+				class Item2
+				{
+					position[]={1535.5402,46.396156,2995.1099};
+					azimut=-11.527375;
+					id=53;
+					side="WEST";
+					vehicle="rhsusf_airforce_pilot";
+					player="PLAY CDG";
+					rank="LIEUTENANT";
+					skill=0.40000001;
+					description="Aviator";
+				};
+				class Item3
+				{
+					position[]={1537.1909,46.396156,2994.5205};
+					azimut=-11.527375;
+					id=54;
+					side="WEST";
+					vehicle="rhsusf_airforce_pilot";
+					player="PLAY CDG";
+					rank="LIEUTENANT";
+					skill=0.40000001;
+					description="Aviator";
+				};
+				class Item4
+				{
+					position[]={1539.0386,46.396156,2993.7725};
+					azimut=-11.527375;
+					id=55;
+					side="WEST";
+					vehicle="rhsusf_airforce_pilot";
+					player="PLAY CDG";
+					rank="SERGEANT";
+					skill=0.40000001;
+					text="Nmed1";
+					description="Section Medical Sergeant";
+				};
+			};
+		};
+		class Item15
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={1532.2354,46.396156,2999.6101};
+					azimut=-11.527375;
+					id=56;
+					side="WEST";
+					vehicle="rhsusf_airforce_pilot";
+					player="PLAY CDG";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=0.40000001;
+					init="this setGroupid [""Charlie Section (A/MH-6M)"",""GroupColor4""]";
+					description="Section Leader";
+				};
+				class Item1
+				{
+					position[]={1533.7843,46.396156,2998.884};
+					azimut=-11.527375;
+					id=57;
+					side="WEST";
+					vehicle="rhsusf_airforce_pilot";
+					player="PLAY CDG";
+					rank="LIEUTENANT";
+					skill=0.40000001;
+					description="Aviator";
+				};
+				class Item2
+				{
+					position[]={1535.958,46.396156,2997.8425};
+					azimut=-11.527375;
+					id=58;
+					side="WEST";
+					vehicle="rhsusf_airforce_pilot";
+					player="PLAY CDG";
+					rank="LIEUTENANT";
+					skill=0.40000001;
+					description="Aviator";
+				};
+				class Item3
+				{
+					position[]={1537.6376,46.396156,2997.2561};
+					azimut=-11.527375;
+					id=59;
+					side="WEST";
+					vehicle="rhsusf_airforce_pilot";
+					player="PLAY CDG";
+					rank="LIEUTENANT";
+					skill=0.40000001;
+					description="Aviator";
+				};
+			};
+		};
+		class Item16
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={1540.8516,46.396156,2996.158};
+					azimut=228.26689;
+					id=60;
+					side="WEST";
+					vehicle="rhsusf_airforce_pilot";
+					player="PLAY CDG";
+					leader=1;
+					rank="CAPTAIN";
+					skill=0.40000001;
+					init="this setGroupid [""75th Tiger Sharks"",""GroupColor4""]";
+					description="Squadron Commander";
+				};
+				class Item1
+				{
+					position[]={1539.5051,46.396156,2998.6379};
+					azimut=228.26689;
+					id=61;
+					side="WEST";
+					vehicle="rhsusf_airforce_pilot";
+					player="PLAY CDG";
+					rank="LIEUTENANT";
+					skill=0.40000001;
+					description="Squadron Pilot";
+				};
+			};
+		};
+		class Item17
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={1558.2671,46.396156,3126.4238};
+					azimut=582.091;
+					id=62;
+					side="WEST";
+					vehicle="rhsusf_army_ocp_combatcrewman";
+					player="PLAY CDG";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=0.40000001;
+					init="this setGroupid [""11th Armored Cavalry"",""GroupColor4""]";
+					description="Platoon Commander";
+				};
+				class Item1
+				{
+					position[]={1556.9412,46.396156,3127.1306};
+					azimut=582.091;
+					id=63;
+					side="WEST";
+					vehicle="rhsusf_army_ocp_crewman";
+					player="PLAY CDG";
+					rank="SERGEANT";
+					skill=0.40000001;
+					description="Gunner";
+				};
+				class Item2
+				{
+					position[]={1555.8582,46.396156,3127.7786};
+					azimut=582.091;
+					id=64;
+					side="WEST";
+					vehicle="rhsusf_army_ocp_driver";
+					player="PLAY CDG";
+					rank="SERGEANT";
+					skill=0.40000001;
+					description="Driver";
+				};
+				class Item3
+				{
+					position[]={1554.9482,46.396156,3128.6648};
+					azimut=582.091;
+					id=65;
+					side="WEST";
+					vehicle="rhsusf_army_ocp_medic";
+					player="PLAY CDG";
+					rank="SERGEANT";
+					skill=0.40000001;
+					text="Amed2";
+					description="Medical Sergeant";
+				};
+			};
+		};
+		class Item18
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={1559.3633,46.396156,3127.7974};
+					azimut=582.091;
+					id=66;
+					side="WEST";
+					vehicle="rhsusf_army_ocp_combatcrewman";
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.40000001;
+					init="this setGroupid [""CHARRIOT 1-2"",""GroupColor4""]";
+					description="Vehicle Commander";
+				};
+				class Item1
+				{
+					position[]={1557.3394,46.396156,3129.0793};
+					azimut=582.091;
+					id=67;
+					side="WEST";
+					vehicle="rhsusf_army_ocp_crewman";
+					player="PLAY CDG";
+					rank="SERGEANT";
+					skill=0.40000001;
+					description="Gunner";
+				};
+				class Item2
+				{
+					position[]={1555.9012,46.396156,3129.9771};
+					azimut=582.091;
+					id=68;
+					side="WEST";
+					vehicle="rhsusf_army_ocp_driver";
+					player="PLAY CDG";
+					rank="SERGEANT";
+					skill=0.40000001;
+					description="Driver";
+				};
+				class Item3
+				{
+					position[]={1558.0586,46.396156,3128.3694};
+					azimut=582.091;
+					id=69;
+					side="WEST";
+					vehicle="rhsusf_army_ocp_medic";
+					player="PLAY CDG";
+					rank="SERGEANT";
+					skill=0.40000001;
+					text="Amed1";
+					description="Medical Sergeant";
+				};
+			};
+		};
+	};
+	class Vehicles
+	{
+		items=2;
+		class Item0
+		{
+			position[]={1506.7788,46.396156,2993.3533};
+			azimut=22.89974;
+			id=70;
+			side="EMPTY";
+			vehicle="RHS_A10_Wolfe";
+			skill=0.60000002;
+		};
+		class Item1
+		{
+			position[]={1551.502,46.396156,2974.574};
+			azimut=22.444954;
+			id=71;
+			side="EMPTY";
+			vehicle="RHS_A10_Lanyan";
+			skill=0.60000002;
+		};
+	};
+	class Markers
+	{
+		items=1;
+		class Item0
+		{
+			position[]={1531.1388,46.396156,2992.1763};
+			name="respawn_west_1";
+			type="Empty";
+			angle=42.3377;
 		};
 	};
 };
