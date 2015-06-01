@@ -1,12 +1,11 @@
-Author = "Cody Salazar AKA Fr33d0m"; 
+Author = "5SFG Dev Team"; 
 loadScreen =  "images\Loadimg.jpg";
-OnLoadName = "5SFG Pacific Station";
+OnLoadName = "5SFG Chimaera";
 onLoadMission = "Questions / Concerns? Email salazar@a3milsim.com";
 
 respawn = 3;
-respawnDelay = 30;
+respawnDelay = 10;
 respawnDialog = 1;
-respawnTemplatesWest[] = {"Spectator"};
 disabledAI = 1;
 enableDebugConsole = 1;
 showMap = 1;
@@ -20,138 +19,15 @@ wreckLimit = 1;
 wreckRemovalMinTime = 60; //seconds
 wreckRemovalMaxTime = 1200; //seconds
 
-
 class Header{
-    gameType = RPG;
+    gameType = COOP;
     minPlayers = 1; 
     maxPlayers = 60;
 };
 
-
-disableChannels[]={0,1,2,3,6};
-
-
-#include "VAS\menu.hpp"
 #include "dialog\MenuNormals.hpp" 
 #include "dialog\2ABCT_Armory.hpp"
-#include "dialog\2ABCT_M4R.hpp"
-#include "R3F_LOG\desc_include.h"	
 
 class CfgFunctions{
     #include "VAS\cfgfunctions.hpp"
-};
-
-
-// Rank Structure
- 
-class CfgUnitInsignia
-{
-	class 5SFG_PFC	{
-		displayName = "[5SFG] Private 1st Class"; // Name displayed in Arsenal
-		author = "Cody Salazar"; // Author displayed in Arsenal
-		texture = "images\Ranks\PVT_Rank.paa"; // Image path
-	};
-	
-	class 5SFG_SPC	{
-		displayName = "[5SFG] Specialist "; // Name displayed in Arsenal
-		author = "Cody Salazar"; // Author displayed in Arsenal
-		texture = "images\Ranks\SPC_Rank.paa"; // Image path
-	};
-	
-	class 5SFG_CPL	{
-		displayName = "[5SFG] Corporal "; // Name displayed in Arsenal
-		author = "Cody Salazar"; // Author displayed in Arsenal
-		texture = "images\Ranks\CPL_Rank.paa"; // Image path
-	};
-	
-	class 5SFG_SGT	{
-		displayName = "[5SFG] Sergeant "; // Name displayed in Arsenal
-		author = "Cody Salazar"; // Author displayed in Arsenal
-		texture = "images\Ranks\SGT_Rank.paa"; // Image path
-	};
-	
-	class 5SFG_SSG	{
-		displayName = "[5SFG] Staff Sergeant "; // Name displayed in Arsenal
-		author = "Cody Salazar"; // Author displayed in Arsenal
-		texture = "images\Ranks\SSG_Rank.paa"; // Image path
-	};
-	
-	class 5SFG_SFC	{
-		displayName = "[5SFG] Sergeant First Class"; // Name displayed in Arsenal
-		author = "Cody Salazar"; // Author displayed in Arsenal
-		texture = "images\Ranks\SFC_Rank.paa"; // Image path
-	};
-	
-	class 5SFG_MSG	{
-		displayName = "[5SFG] Master Sergeant "; // Name displayed in Arsenal
-		author = "Cody Salazar"; // Author displayed in Arsenal
-		texture = "images\Ranks\MSG_Rank.paa"; // Image path
-	};
-	
-	class 5SFG_1SG	{
-		displayName = "[5SFG] First Sergeant "; // Name displayed in Arsenal
-		author = "Cody Salazar"; // Author displayed in Arsenal
-		texture = "images\Ranks\SGM_Rank.paa"; // Image path
-	};
-	
-	class 5SFG_W01	{
-		displayName = "[5SFG] Warrant Officer (W01) "; // Name displayed in Arsenal
-		author = "Cody Salazar"; // Author displayed in Arsenal
-		texture = "images\Ranks\W01_Rank.paa"; // Image path
-	};
-	
-	class 5SFG_CW2	{
-		displayName = "[5SFG] Chief Warrant Officer (CW2)  "; // Name displayed in Arsenal
-		author = "Cody Salazar"; // Author displayed in Arsenal
-		texture = "images\Ranks\CW2_Rank.paa"; // Image path
-	};
-	
-	class 5SFG_CW3	{
-		displayName = "[5SFG] Chief Warrant Officer (CW3)"; // Name displayed in Arsenal
-		author = "Cody Salazar"; // Author displayed in Arsenal
-		texture = "images\Ranks\CW3_Rank.paa"; // Image path
-	};
-	
-	class 5SFG_CW4	{
-		displayName = "[5SFG] Chief Warrant Officer (CW4)"; // Name displayed in Arsenal
-		author = "Cody Salazar"; // Author displayed in Arsenal
-		texture = "images\Ranks\CW4_Rank.paa"; // Image path
-	};
-
-	class 5SFG_CW5	{
-		displayName = "[5SFG] Chief Warrant Officer (CW5)"; // Name displayed in Arsenal
-		author = "Cody Salazar"; // Author displayed in Arsenal
-		texture = "images\Ranks\CW5_Rank.paa"; // Image path
-	};
-	
-	class 5SFG_2LT	{
-		displayName = "[5SFG] Second Lieutenant"; // Name displayed in Arsenal
-		author = "Cody Salazar"; // Author displayed in Arsenal
-		texture = "images\Ranks\LT_Rank.paa"; // Image path
-	};
-
-	class 5SFG_1LT	{
-		displayName = "[5SFG] First Lieutenant"; // Name displayed in Arsenal
-		author = "Cody Salazar"; // Author displayed in Arsenal
-		texture = "images\Ranks\1LT_Rank.paa"; // Image path
-	};
-	
-	class 5SFG_CPT	{
-		displayName = "[5SFG] Captain"; // Name displayed in Arsenal
-		author = "Cody Salazar"; // Author displayed in Arsenal
-		texture = "images\Ranks\CPT_Rank.paa"; // Image path
-	};	
-	
-	
-	class 5SFG_MAJ	{
-		displayName = "[5SFG] Major"; // Name displayed in Arsenal
-		author = "Cody Salazar"; // Author displayed in Arsenal
-		texture = "images\Ranks\MAJ_Rank.paa"; // Image path
-	};
-	
-	class 5SFG_LTC	{
-		displayName = "[5SFG] Lieutenant Colonel"; // Name displayed in Arsenal
-		author = "Cody Salazar"; // Author displayed in Arsenal
-		texture = "images\Ranks\LTC_Rank.paa"; // Image path
-	};
 };
