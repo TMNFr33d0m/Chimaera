@@ -1550,7 +1550,7 @@ class Mission
 				class Item0
 				{
 					position[]={710.26196,16.612,495.849};
-					azimut=361.21387;
+					azimut=361.21399;
 					class args
 					{
 						items=9;
@@ -1586,7 +1586,7 @@ class Mission
 						};
 						class Item5
 						{
-							value="3";
+							value="0";
 							parentCls="ACE_moduleAdvancedMedicalSettings";
 							typeName="useLocation_PAK";
 						};
@@ -1598,13 +1598,13 @@ class Mission
 						};
 						class Item7
 						{
-							value="1";
+							value="0";
 							parentCls="ACE_moduleAdvancedMedicalSettings";
 							typeName="consumeItem_SurgicalKit";
 						};
 						class Item8
 						{
-							value="3";
+							value="0";
 							parentCls="ACE_moduleAdvancedMedicalSettings";
 							typeName="useLocation_SurgicalKit";
 						};
@@ -1806,7 +1806,7 @@ class Mission
 				};
 				class Item2
 				{
-					position[]={1074.6204,16.612,534.74182};
+					position[]={1077.8872,16.612,544.07623};
 					class Effects
 					{
 					};
@@ -1814,7 +1814,7 @@ class Mission
 				};
 				class Item3
 				{
-					position[]={1075.0747,14.839272,512.70508};
+					position[]={1078.3417,14.748775,512.70508};
 					class Effects
 					{
 					};
@@ -3568,7 +3568,7 @@ class Mission
 		};
 		class Item5
 		{
-			position[]={2131.5735,28.112936,3396.2825};
+			position[]={2459.3425,21.016918,3249.1057};
 			name="TAOR_R";
 			markerType="ELLIPSE";
 			type="Empty";
