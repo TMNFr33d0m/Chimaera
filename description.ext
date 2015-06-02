@@ -27,7 +27,3 @@ class Header{
 
 #include "dialog\MenuNormals.hpp" 
 #include "dialog\2ABCT_Armory.hpp"
-
-class CfgFunctions{
-    #include "VAS\cfgfunctions.hpp"
-};
