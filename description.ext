@@ -27,3 +27,17 @@ class Header{
 
 #include "dialog\MenuNormals.hpp" 
 #include "dialog\2ABCT_Armory.hpp"
+
+class CfgMusic
+{
+	tracks[]={Intro};
+
+
+	
+		class IntroA
+	{
+		name = "IntroA";
+		sound[] = {"\music\intro.ogg", db+0, 1.0};
+	};
+	
+};
